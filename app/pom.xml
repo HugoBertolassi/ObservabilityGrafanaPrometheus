@@ -91,11 +91,17 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-->Dependencias para liberar acaptura de logs <-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+			<version>${micrometer.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
