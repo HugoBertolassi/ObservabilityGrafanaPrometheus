@@ -15,3 +15,19 @@ https://docs.spring.io/spring-boot/docs/2.2.x/reference/html/production-ready-fe
 
 
 hikariicp:metrica de conexão com o banco de dados
+
+4-Apos adicionar o proxy
+metrics: http://localhost:9000/metrics direcionado pelo proxy removendo o actuator
+prometheus: http://localhost:9090
+
+O arquivo client testa a api em tempo real das api, em um alaço infinito
+
+5-4 Golden signal for observabilitys (livro SRE do google)
+    latencia
+    trafego
+    saturação
+    erros
+
+    metodos USE: Utilization,Saturation, ERRORS
+
+    Metodo RED: Rate, Errors, Durations
