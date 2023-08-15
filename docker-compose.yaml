@@ -94,7 +94,19 @@ services:
     depends_on:
       - proxy-forum-api
 
-#teste da api co laço nfinito
+  grafana-forum-api:
+    image: grafana/grafana
+    container_name: grafana-forum-api
+    volumes:
+      - ./grafana:/var/lib/grafana
+    ports:
+      - 3000:3000
+    networks:
+      - monit
+    depends_on:
+      - prometheus-forum-api
+
+#teste da api com laço nfinito
   client-forum-api:
     build:
       context: ./client/
@@ -105,4 +117,4 @@ services:
     networks:
       - proxy
     depends_on:
-      - proxy-forum-api
+      - grafana-forum-api

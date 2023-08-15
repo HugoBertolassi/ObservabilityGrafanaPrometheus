@@ -31,3 +31,10 @@ O arquivo client testa a api em tempo real das api, em um alaço infinito
     metodos USE: Utilization,Saturation, ERRORS
 
     Metodo RED: Rate, Errors, Durations
+
+6-Grafana
+    senha padrao:admin usar 123456
+    6.1-Configurar data source: configuration>datasource
+        Selecionar promeheus colocar a porta  e nome na url: http://prometheus-forum-api:9090
+        Testar e validar config
+    6.2-Criar pasta para armazenar os dashboards
