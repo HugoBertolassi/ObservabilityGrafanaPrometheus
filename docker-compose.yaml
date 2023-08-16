@@ -95,7 +95,7 @@ services:
     depends_on:
       - proxy-forum-api
 
-alertmanager-forum-api: 
+  alertmanager-forum-api: 
     image: prom/alertmanager
     container_name: alertmanager-forum-api
     volumes: 
